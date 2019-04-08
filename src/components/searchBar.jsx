@@ -3,9 +3,12 @@
 import React, { Component } from 'react';
 
 class SearchBar extends Component {
+  handleMouse = () => {
+    console.log('yaaay');
+  }
   render() {
     return (
-      <input onChange={this.props.handleChange} className="form-search" />
+      <input type="text" onMouseOver={this.handleMouse} onChange={this.props.handleChange} className="form-control form-search" />
     );
   }
 }
